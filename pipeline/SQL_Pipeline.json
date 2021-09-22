@@ -256,7 +256,14 @@
 			{
 				"name": "Validate Import Rows",
 				"type": "SqlServerStoredProcedure",
-				"dependsOn": [],
+				"dependsOn": [
+					{
+						"activity": "Import CSV",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
 				"policy": {
 					"timeout": "7.00:00:00",
 					"retry": 0,
@@ -271,6 +278,39 @@
 				"linkedServiceName": {
 					"referenceName": "AzureSQL_sjenteoh",
 					"type": "LinkedServiceReference"
+				}
+			},
+			{
+				"name": "Send Failure Notification",
+				"type": "WebActivity",
+				"dependsOn": [
+					{
+						"activity": "Validate Import Rows",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"url": "https://prod-18.southeastasia.logic.azure.com:443/workflows/380347a8d1c04837b4e4a6bf5e46da42/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=8v-1-Yhb-4AvnE1VjIcq6cAiIT_sETCOkWsPKlqOhBI",
+					"method": "POST",
+					"headers": {
+						"Content-Type": "application/json"
+					},
+					"body": {
+						"DataFactoryName": "@{pipeline().DataFactory}",
+						"PipelineName": "@{pipeline().Pipeline}",
+						"ErrorMessage": "@{activity('Validate Import Rows').error.message}",
+						"EmailTo": "@{pipeline().parameters.EmailTo}"
+					}
 				}
 			}
 		],
