@@ -1,0 +1,12 @@
+{
+	"name": "AzureSQL_sjenteoh",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"connectionString": "integrated security=False;encrypt=True;connection timeout=30;data source=sjtsqlserver.database.windows.net;initial catalog=sjtsqldbazsqldb;user id=sjenteoh",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIlNKVEFERl9lNGJiNmUyNy02ODAyLTQzNmUtYTdlNC05ZTJlMmFkZWUyYTgiDQp9"
+		}
+	}
+}
