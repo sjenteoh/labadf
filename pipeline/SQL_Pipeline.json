@@ -336,7 +336,7 @@
 					"url": "https://prod-02.southeastasia.logic.azure.com:443/workflows/26eabd9973de4fd89fada619afda7221/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=T62nJKg7quT5Fpc0pKNnvc2WQIkwb9lLmzNGiqWcpII",
 					"method": "POST",
 					"headers": {
-						"ContentType": "application/json"
+						"Content-Type": "application/json"
 					},
 					"body": {
 						"DataFactoryName": "@{pipeline().DataFactory}",
