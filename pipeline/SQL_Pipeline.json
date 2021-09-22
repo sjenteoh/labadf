@@ -347,6 +347,12 @@
 				}
 			}
 		],
+		"variables": {
+			"EmailTo": {
+				"type": "String",
+				"defaultValue": "see-chian.teoh@osram-os.com"
+			}
+		},
 		"annotations": []
 	}
 }
