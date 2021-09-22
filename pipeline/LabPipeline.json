@@ -82,7 +82,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"notebookPath": "/Users/sjenteoh@hotmail.com/03-Data-Ingestion-Via-ADF/03-Data-Transformation",
+					"notebookPath": "/Users/sjenteoh@hotmail.com/03-Data-Ingestion-Via-ADF/includes/Databricks-Data-Transformations",
 					"baseParameters": {
 						"accountName": "sjtblob",
 						"accountKey": "HVPRdIPaX4lD9t0Bm48w+fzTFdodU2tI0o6OgtJkdkaRQcDBZv/bTCX+XaawWBOusD3HoPGeJ0unquAIncY6PA==",
