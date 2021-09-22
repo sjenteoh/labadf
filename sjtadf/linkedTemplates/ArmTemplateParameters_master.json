@@ -11,6 +11,9 @@
 		"AzureStorageLinkedService_connectionString": {
 			"value": ""
 		},
+		"AzureSQL_sjenteoh_connectionString": {
+			"value": ""
+		},
 		"PublicDataset_sasUri": {
 			"value": ""
 		},
