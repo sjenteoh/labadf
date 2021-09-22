@@ -8,10 +8,10 @@
 		"AzureDatabricks_accessToken": {
 			"value": ""
 		},
-		"AzureStorageLinkedService_connectionString": {
+		"AzureSQL_sjenteoh_connectionString": {
 			"value": ""
 		},
-		"AzureSQL_sjenteoh_connectionString": {
+		"AzureStorageLinkedService_connectionString": {
 			"value": ""
 		},
 		"PublicDataset_sasUri": {
