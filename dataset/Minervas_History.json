@@ -21,39 +21,51 @@
 		},
 		"schema": [
 			{
+				"name": "Book_Id",
 				"type": "String"
 			},
 			{
+				"name": "ISBN",
 				"type": "String"
 			},
 			{
+				"name": "My_Rating",
 				"type": "String"
 			},
 			{
+				"name": "Date_Read",
 				"type": "String"
 			},
 			{
+				"name": "Date_Added",
 				"type": "String"
 			},
 			{
+				"name": "Bookshelves",
 				"type": "String"
 			},
 			{
+				"name": "Exclusive_Shelf",
 				"type": "String"
 			},
 			{
+				"name": "My_Review",
 				"type": "String"
 			},
 			{
+				"name": "Spoiler",
 				"type": "String"
 			},
 			{
+				"name": "Private_Notes",
 				"type": "String"
 			},
 			{
+				"name": "Read_Count",
 				"type": "String"
 			},
 			{
+				"name": "Original_Purchase_Date",
 				"type": "String"
 			}
 		]
